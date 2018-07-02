@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    margin-top: -12%;
+    width: 1000em;
+    height: 1000px;
+    background: currentColor;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title {
+    position: relative;
+    font-size: 10em;
+    width: 2em;
+    height: 2em;
+}
+
+.title::after {
+    position: absolute;
+    color: white;
+    content: attr(context);
+}

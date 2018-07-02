@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.275em;
+    color: #555;
+}
+
+.container h1 {
+    margin-top: 2em;
+}
+
+.container li {
+    list-style-type: none;
+    padding-left: 1em;
+    padding-bottom: .2em;
+
+}
+
+.container p li:first-child {
+    margin-top: 1em;
+}
+
+.container p {
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.container p:last-child {
+    padding-bottom: 10em;
+}
+
+.container a {
+    color: currentColor;
+}
