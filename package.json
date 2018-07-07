@@ -23,6 +23,7 @@
     "webpack-cli": "^3.0.8"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "express": "^4.16.3",
     "react": "^16.4.1",
     "react-css-modules": "^4.7.3",

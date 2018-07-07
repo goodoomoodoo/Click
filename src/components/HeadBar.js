@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
 import styles from '../common/HeadBar.css';
 import { toggleColor } from '../redux/action';
@@ -31,21 +31,21 @@ class HeadBar extends React.Component
                     For this instance, the Component NavLink requires id to pass a 
                     value to event target.
                 */}
-                <NavLink onClick={ this.handleToggle } id='onRed' to='/red' styleName='btn red'>
+                <span onClick={ this.handleToggle } id='onRed' to='/red' styleName='btn red'>
                     <div id='onRed' styleName={ this.props.onRed ? 'content-on' : 'content-off' }>Red</div>
-                </NavLink>
+                </span>
 
-                <NavLink onClick={ this.handleToggle } id='onBlue' to='/blue' styleName='btn blue'>
+                <span onClick={ this.handleToggle } id='onBlue' to='/blue' styleName='btn blue'>
                     <div id='onBlue' styleName={ this.props.onBlue ? 'content-on' : 'content-off' }>Blue</div>
-                </NavLink>
+                </span>
 
-                <NavLink onClick={ this.handleToggle } id='onGreen' to='/green' styleName='btn green'>
+                <span onClick={ this.handleToggle } id='onGreen' to='/green' styleName='btn green'>
                     <div id='onGreen' styleName={ this.props.onGreen ? 'content-on' : 'content-off' }>Green</div>
-                </NavLink>
+                </span>
 
-                <NavLink onClick={ this.handleToggle } id='onYellow' to='/yellow' styleName='btn yellow'>
+                <span onClick={ this.handleToggle } id='onYellow' to='/yellow' styleName='btn yellow'>
                     <div id='onYellow' styleName={ this.props.onYellow ? 'content-on' : 'content-off' }>Yellow</div>
-                </NavLink>
+                </span>
             </div>
         );
     }
@@ -64,4 +64,4 @@ const mapDispatchToProps = dispatch => ({
 
 const HeadBarWithCSS = CSSModules( HeadBar, styles, { allowMultiple: true } );
 
-export default withRouter( connect( mapStateToProps, mapDispatchToProps )( HeadBarWithCSS ) );
+export default connect( mapStateToProps, mapDispatchToProps )( HeadBarWithCSS );

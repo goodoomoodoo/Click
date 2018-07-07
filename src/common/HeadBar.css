@@ -45,6 +45,7 @@ html {
     padding: 2px;
     border: solid 2px transparent;
     border-radius: .5em;
+    cursor: pointer;
 }
 
 .btn::after {

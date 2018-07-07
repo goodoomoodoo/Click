@@ -1,7 +1,6 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
-import { StaticRouter as Router, Route } from 'react-router-dom';
 import express from 'express';
 
 // React component to be rendered
@@ -32,9 +31,7 @@ app.get( '/*', ( req, res ) => {
     // server side rendered html content
     let content = renderToString(
         <Provider store={ store }>
-            <Router location={ req.url } context={{}}>
-                <Route component={ App } />
-            </Router>
+            <App />
         </Provider>
     );
 

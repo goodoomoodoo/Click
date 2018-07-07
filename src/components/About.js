@@ -23,7 +23,7 @@ class About extends React.Component
                 <p>
                     For a long time, frontend has been the only area I've got in touch with, so I've been
                     thinking of learning topics pertaining to backend. This project includes on of the combination
-                    I've wanted to learn Expressjs + Nodejs. Frankly, this is rather a small unsignificant
+                    I've wanted to learn Expressjs + Nodejs. Frankly, this is rather a small and unsignificant
                     web app but it serves as a milestone of the eventual goal that I've been seeking for since the start. 
                 </p>
                 <h1>More...</h1>

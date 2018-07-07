@@ -21,3 +21,19 @@
     color: white;
     content: attr(context);
 }
+
+.red {
+    color: rgba(226, 95, 95, .8);
+}
+
+.blue {
+    color: rgba(76, 147, 228, 0.9);
+}
+
+.green {
+    color: #53923a;
+}
+
+.yellow {
+    color: #e5b72b;
+}
